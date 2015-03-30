@@ -39,6 +39,11 @@ Sphinx Nameko Theme is licensed under the MIT license.
 Changelog
 =========
 
+Version 0.0.2
+-------------
+
+Remove symlink confusing ReadTheDocs
+
 Version 0.0.1
 -------------
 
