@@ -12,7 +12,7 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
-        'Operating System :: OS Independent'
+        'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Topic :: Internet',
         'Topic :: Software Development :: Documentation',
