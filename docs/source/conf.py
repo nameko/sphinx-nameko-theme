@@ -7,6 +7,7 @@ This file is execfile()d with the current directory set to its containing dir.
 
 import os
 import sys
+import pkg_resources
 
 import sphinx_nameko_theme
 
@@ -45,9 +46,9 @@ copyright = u'2015'
 # |release|, also used in various other places throughout the built documents.
 #
 # The short X.Y version.
-version = sphinx_nameko_theme.__version__
+version = pkg_resources.get_distribution('sphinx_nameko_theme').version
 # The full version, including alpha/beta/rc tags.
-release = sphinx_nameko_theme.__version__
+release = version
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
