@@ -1,0 +1,28 @@
+sudo: false
+language: python
+
+python:
+  - '2.7'
+
+install:
+  - pip install -e .
+
+script:
+  - sphinx-build -nW -b html -d docs/build/doctrees docs/source docs/build
+
+notifications:
+  email: false
+  irc:
+    channels:
+      - chat.freenode.net#nameko
+    use_notice: true
+    skip_join: true
+
+deploy:
+  provider: pypi
+  user: onefinestay
+  password:
+    secure: iRIzqEHs1E6FkV91LbReCsNuSo40+xp1B97UnA8rlP5l3LGA6Msv7wsO6SYK5ISrp5vF34hBEPx9SguQWYhNylvQZoELQ2xv+6ST9YT5xo6QeOoWDPW97mXwMQ4ZeR1+4ekqg7rT28NkGe6VfWsLl7FAPd1AQiOD9Rlv5UAu9Lg=
+  on:
+    tags: true
+    repo: onefinestay/sphinx-nameko-theme
