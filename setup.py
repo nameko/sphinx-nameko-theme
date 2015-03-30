@@ -18,6 +18,12 @@ setup(
         'Topic :: Software Development :: Documentation',
     ],
     packages=['sphinx_nameko_theme'],
+    install_requires=['sphinx'],
+    entry_points = {
+        'sphinx_themes': [
+            'path = sphinx_nameko_theme:get_html_theme_path',
+        ]
+    },
     include_package_data=True,
     zip_safe=False
 )

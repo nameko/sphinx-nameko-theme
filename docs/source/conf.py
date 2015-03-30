@@ -9,8 +9,6 @@ import os
 import sys
 import pkg_resources
 
-import sphinx_nameko_theme
-
 
 # Adding this directory to the sys path, to build autodoc of example module.
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
@@ -57,7 +55,6 @@ pygments_style = 'sphinx'
 # -- Options for HTML output --------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.
-html_theme_path = [sphinx_nameko_theme.get_html_theme_path()]
 html_theme = 'nameko'
 
 # Output file base name for HTML help builder.
