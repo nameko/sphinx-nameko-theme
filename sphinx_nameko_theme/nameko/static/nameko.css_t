@@ -28,6 +28,7 @@ h1, h2, h3, h4 {
     color: #2a2730;
     font-weight: 700;
     font-family: "Lora","Times",serif;
+    clear: both;
 }
 
 div.document {
