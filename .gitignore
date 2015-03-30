@@ -1,0 +1,14 @@
+# Project files
+docs/build
+.coverage
+.tox
+
+# Python compiled files
+*.py[cod]
+
+# Python packages
+*.egg
+*.egg-info
+dist
+build
+__pycache__
