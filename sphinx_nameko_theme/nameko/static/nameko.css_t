@@ -278,6 +278,7 @@ div.admonition {
     background-color: #f6f7f9;
     border: 1px solid #cdcdd1;
     padding: 0px 12px 12px 12px;
+    font-size: 0.9em;
 }
 
 p.admonition-title {
@@ -289,6 +290,40 @@ p.admonition-title {
 
 div.admonition p.admonition-title + p {
     display: inline;
+}
+
+div.attention, div.caution, div.seealso {
+    background-color: #fef9e9;
+    border: 1px solid #fbe091;
+}
+
+div.attention p.admonition-title,
+div.caution p.admonition-title,
+div.seealso p.admonition-title {
+    background-color: #fbe091;
+}
+
+div.danger, div.error, div.warning {
+    border: 1px solid #FEA1A2;
+    background-color: #FEE4E4;
+}
+
+div.danger p.admonition-title,
+div.error p.admonition-title,
+div.warning p.admonition-title {
+    background-color: #FEA1A2;
+}
+
+div.note, div.important, div.hint, div.tip {
+    border: 1px solid #daebea;
+    background-color: #F7FAFA;
+}
+
+div.note p.admonition-title,
+div.important p.admonition-title,
+div.hint p.admonition-title,
+div.tip p.admonition-title {
+    background-color: #daebea;
 }
 
 div.highlight {
