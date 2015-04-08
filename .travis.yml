@@ -10,14 +10,6 @@ install:
 script:
   - sphinx-build -nW -b html -d docs/build/doctrees docs/source docs/build
 
-notifications:
-  email: false
-  irc:
-    channels:
-      - chat.freenode.net#nameko
-    use_notice: true
-    skip_join: true
-
 deploy:
   provider: pypi
   user: onefinestay
