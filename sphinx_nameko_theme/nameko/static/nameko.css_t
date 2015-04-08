@@ -338,18 +338,17 @@ pre {
     line-height: 1.5em;
     margin: 1.5em 0 1.5em 0;
     padding: 10px;
-/*    box-shadow: 1px 1px 1px #d8d8d8;
-    -webkit-box-shadow: 1px 1px 1px #d8d8d8;
-    -moz-box-shadow: 1px 1px 1px #d8d8d8;*/
 }
 
 pre, tt, code {
     font-family: 'Consolas', 'Menlo', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
 }
 
-tt, code {
-    /*background-color: #ecf0f3;*/
-    font-size: 0.85em;
+tt, code, code.xref {
+    padding: 2px;
+    background-color: #fff;
+    border: 1px solid #daebea;
+    font-size: 0.75em;
 }
 
 tt.descname, code.descname {
@@ -358,13 +357,6 @@ tt.descname, code.descname {
 
 tt.xref, a tt, code.xref, a code {
     font-weight: normal;
-}
-
-span.pre {
-    padding: 0 2px;
-    font-size: 0.8em;
-    background-color: #fff;
-    border: 1px solid #daebea;
 }
 
 dl.class, dl.function {
@@ -380,6 +372,15 @@ dl.exception > dt {
     background-color: #f5f5f5;
     margin: 25px 0 10px 0;
     padding: 1px 10px;
+}
+
+dl.function code.descname,
+dl.attribute code.descname,
+dl.classmethod code.descname,
+dl.method code.descname,
+dl.class code.descname,
+dl.exception code.descname {
+    border: none;
 }
 
 table.docutils {
