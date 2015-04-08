@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='sphinx-nameko-theme',
-    version='0.0.2',
+    version='0.0.3',
     author='onefinestay',
     author_email='nameko-devs@onefinestay.com',
     description='Sphinx Nameko Theme',
